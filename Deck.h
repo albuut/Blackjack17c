@@ -34,8 +34,6 @@ public:
     void refreshDeck();
     int getNumCards(){return draw.size();}
     Card drawCard();
-
-
 };
 
 #endif /* DECK_H */

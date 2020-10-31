@@ -28,13 +28,6 @@ int main(int argc, char** argv) {
             break;
         }
     }
-    
-    
-    
-    
-//    Table table(Player("Guest","",25000,0,0));
-//    table.play();
-//    
     return 0;
 }
 

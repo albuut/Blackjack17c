@@ -31,8 +31,7 @@ private:
     int handsPlayed;
     int handsWon;
     string fileNamePlayer = "playerData.txt";
-    map<string,Player> playerList;
-    
+    map<string,Player> playerList;    
 public:
     Player(string username, string password, float money, int handsPlayed, int handsWon);
     Player(const Player &player);
@@ -48,6 +47,5 @@ public:
     void update(const Player &current);
     void updateList();
 };
-
 #endif /* PLAYER_H */
 
