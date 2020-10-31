@@ -1,0 +1,6 @@
+bilbo,OnlyOneRing,25000,0,0,
+samwise,FrodoisHandsome,150000,3,4,
+guest,Password,25500,0,2,
+curious George,YellowHat,25000,0,0,
+diablo,EvilRises,11400,29,9,
+albuut,1AmHandsome,434900,85,28,
