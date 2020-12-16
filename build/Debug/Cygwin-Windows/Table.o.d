@@ -1,5 +1,5 @@
 build/Debug/Cygwin-Windows/Table.o: Table.cpp Table.h Player.h Deck.h \
- Card.h Hand.h Bet.h
+ Card.h Hand.h BST.h Bet.h
 
 Table.h:
 
@@ -10,5 +10,7 @@ Deck.h:
 Card.h:
 
 Hand.h:
+
+BST.h:
 
 Bet.h:

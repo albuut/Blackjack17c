@@ -12,6 +12,10 @@ private:
     int value;
     int suit;
 public:
+    Card(){
+        value = 0;
+        suit = 0;
+    }
     Card(const int value, const int suit);
     Card getCard()const{return *this;}
     int getGameValue()const{
@@ -20,6 +24,9 @@ public:
         else{return value;}};
     int getValue()const{
         return value;
+    }
+    int getSuit()const{
+        return suit;
     }
     string toString();
     string suitToString();

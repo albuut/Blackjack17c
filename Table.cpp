@@ -26,6 +26,11 @@ void Table::play() {
         insurance(*itr);
         split(*itr);
         if (!doubleDown(*itr)) {
+            Card cheat = deck.cheat();
+            if(cheat.getValue() != -1){
+                playerHand[*itr].add(cheat);
+            }
+            deck.getWinChance(playerHand[*itr]);
             while (hit(*itr)) {
                 playerHand[*itr].add(deck.drawCard());
                 printHand();
@@ -54,6 +59,7 @@ void Table::dealCards(float amount) {
 bool Table::hit(int i) {
     printHand();
     if (playerHand[i].getTotal() < 21) {
+        deck.getWinChance(playerHand[i]);
         cout << "Hit Hand " << i + 1 << "?(Y/N): ";
         if (choice()) {
             return true;
@@ -67,6 +73,7 @@ bool Table::doubleDown(int i) {
     printHand();
     if (playerHand[i].handSize() == 2) {
         if (player.getMoney() > bet) {
+            deck.getWinChance(playerHand[i]);
             cout << "Double Down Hand " << i + 1 << "?(Y/N): ";
             if (choice()) {
                 player.modBal(-bet);

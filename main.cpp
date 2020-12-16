@@ -12,6 +12,11 @@ using namespace std;
 int main(int argc, char** argv) {
     srand(time(NULL));
 
+
+    
+    
+    
+
     Login login;
     Player player = Player("Guest","Password",25000,0,0);
     if(login.logon()){

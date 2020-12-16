@@ -17,7 +17,7 @@ bool Login::logon() {
             getline(cin,username);
             cout << "Password: ";
             getline(cin,password);
-            if(checkLogin(username,password)){
+            if(checkLogin(username,to_string(str_hash(password)))){
                 clear();
                 loginHeader();
                 return true;
@@ -52,7 +52,7 @@ bool Login::logon() {
             cout << "Enter a Password: ";
             getline(cin,password);
             transform(username.begin(), username.end(), username.begin(), ::tolower);
-            createUser(username,password);
+            createUser(username,to_string(str_hash(password)));
             clear();
             loginHeader();
             return true;

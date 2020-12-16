@@ -18,11 +18,13 @@
 #include <map>
 #include <iterator>
 #include <iomanip>
+#include <functional>
 class Login {
 private:
     map<string,Player> playerList;
     Player player = Player("Guest","Password",25000,0,0);
     bool online;
+    hash<string> str_hash;
 protected:
     string fileNamePlayer = "playerData.txt";
 public:
@@ -40,6 +42,8 @@ public:
     bool loginChoice();
     void clear();
     bool caseless_match(string, string);
+    
+    
 
 };
 

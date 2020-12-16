@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>BST.h</itemPath>
       <itemPath>Bet.h</itemPath>
       <itemPath>Card.h</itemPath>
       <itemPath>Deck.h</itemPath>
@@ -50,6 +51,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="BST.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Bet.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Bet.h" ex="false" tool="3" flavor2="0">
@@ -101,6 +104,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="BST.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Bet.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Bet.h" ex="false" tool="3" flavor2="0">
